@@ -69,18 +69,10 @@ export default function Page() {
       <div className="relative flex w-full grow flex-col items-center justify-center">
         <div className="flex w-full select-none px-12">
           <motion.div
-            onHoverStart={() => {
-              animate(scale, 1.2);
-            }}
-            onHoverEnd={() => {
-              animate(scale, 1);
-            }}
-            onTouchStart={() => {
-              animate(scale, 1.2);
-            }}
-            onTouchEnd={() => {
-              animate(scale, 1);
-            }}
+            onHoverStart={() => animate(scale, 1.2)}
+            onHoverEnd={() => animate(scale, 1)}
+            onTouchStart={() => animate(scale, 1.2)}
+            onTouchEnd={() => animate(scale, 1)}
             style={{
               scale,
               opacity: useTransform(scale, [1, 1.2], [0.7, 1]),
